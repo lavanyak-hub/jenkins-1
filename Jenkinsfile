@@ -41,7 +41,7 @@ pipeline {
                    """
                 }
                
-            }
+            
         }
         stage('Test') {
             steps {
