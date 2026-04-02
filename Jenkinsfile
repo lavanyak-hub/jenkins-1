@@ -1,4 +1,5 @@
 pipeline {
+    // These are pre-build sections
     agent {
         node {   
             label 'AGENT-1'
@@ -19,7 +20,7 @@ pipeline {
         choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
-    
+
     // This is build section
 
     stages {
